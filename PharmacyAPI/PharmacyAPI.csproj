@@ -121,7 +121,6 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\DeliveryController.cs" />
-    <Compile Include="Controllers\ImageController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Controllers\PaymentController.cs" />
@@ -144,6 +143,14 @@
     <Compile Include="Migrations\201712052237188_12.Designer.cs">
       <DependentUpon>201712052237188_12.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201712061834046_321.cs" />
+    <Compile Include="Migrations\201712061834046_321.Designer.cs">
+      <DependentUpon>201712061834046_321.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712061843310_4444.cs" />
+    <Compile Include="Migrations\201712061843310_4444.Designer.cs">
+      <DependentUpon>201712061843310_4444.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationContext.cs" />
     <Compile Include="Models\Availability.cs" />
@@ -153,7 +160,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Image.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\PaymentMethod.cs" />
     <Compile Include="Models\Pharmacy.cs" />
@@ -192,6 +198,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201712052237188_12.resx">
       <DependentUpon>201712052237188_12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712061834046_321.resx">
+      <DependentUpon>201712061834046_321.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712061843310_4444.resx">
+      <DependentUpon>201712061843310_4444.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

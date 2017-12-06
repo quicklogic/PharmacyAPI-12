@@ -42,10 +42,6 @@ namespace PharmacyAPI.Controllers
         // POST api/<controller>
         public IHttpActionResult Post([FromBody]AddUser user)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
            
             User us = new User
             {

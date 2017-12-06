@@ -33,6 +33,7 @@ namespace PharmacyAPI.Controllers
                              Type = Type.Name,
                              Category = Category.Name,
                              Discount = Product.Discount,
+                             ImageURI = Product.ImageURI
                          };
                          
             return result;

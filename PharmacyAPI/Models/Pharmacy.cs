@@ -17,7 +17,6 @@ namespace PharmacyAPI
         public virtual DbSet<Availability> Availabilities { get; set; }
         public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<DeliveryMethod> DeliveryMethods { get; set; }
-        public virtual DbSet<Image> Images { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<PaymentMethod> PaymentMethods { get; set; }
         public virtual DbSet<Producer> Producers { get; set; }
@@ -92,13 +91,12 @@ namespace PharmacyAPI
                 .HasPrecision(18, 0);
 
             modelBuilder.Entity<Product>()
-                .Property(e => e.Total)
-                .IsFixedLength();
+               .Property(e => e.ImageURI)
+               .IsFixedLength();
 
             modelBuilder.Entity<Product>()
-                .HasMany(e => e.Images)
-                .WithRequired(e => e.Product)
-                .WillCascadeOnDelete(false);
+                .Property(e => e.Total)
+                .IsFixedLength();
 
             modelBuilder.Entity<Product>()
                 .HasMany(e => e.Recipies)

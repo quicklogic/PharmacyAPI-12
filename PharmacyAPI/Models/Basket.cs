@@ -15,9 +15,6 @@ using System.Web;
         [Required]
         public int ProductID { get; set; }
 
-        [Required]
-        [StringLength(10)]
-        public string RecipeImageURL { get; set; }
 
         [Required]
         [StringLength(100)]

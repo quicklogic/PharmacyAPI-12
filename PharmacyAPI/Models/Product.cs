@@ -12,7 +12,6 @@ namespace PharmacyAPI
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Product()
         {
-            Images = new HashSet<Image>();
             Recipies = new HashSet<Recipy>();
             Orders = new HashSet<Order>();
             Baskets = new HashSet<Basket>();
@@ -41,15 +40,14 @@ namespace PharmacyAPI
 
         public int? Discount { get; set; }
 
+        public string ImageURI { get; set; }
+
         [StringLength(10)]
         public string Total { get; set; }
 
         public virtual Availability Availability1 { get; set; }
 
         public virtual Category Category1 { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Image> Images { get; set; }
 
         public virtual Producer Producer1 { get; set; }
 
